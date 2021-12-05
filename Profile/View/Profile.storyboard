@@ -136,6 +136,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="didPressFeedButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XSu-YZ-an6"/>
+                                            <segue destination="Wtg-QN-9ll" kind="show" identifier="ShowFeedSegue" id="VnB-lk-SaA"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -197,7 +198,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IET-TF-wSn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1534" y="93"/>
+            <point key="canvasLocation" x="1536" y="78"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="2hZ-mv-faP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Feed" id="Wtg-QN-9ll" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cV2-GD-4dX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VpN-cy-vpz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1536" y="111"/>
         </scene>
         <!--Settings-->
         <scene sceneID="nwS-Vi-VE6">
@@ -207,7 +218,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ss-00-ZnG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1537" y="61"/>
+            <point key="canvasLocation" x="1537" y="47"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

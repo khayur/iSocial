@@ -17,6 +17,10 @@
 		85467AE3275CF62F0082F3C9 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85467AE2275CF62F0082F3C9 /* Friend.swift */; };
 		85467AE6275D0B130082F3C9 /* FriendsHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85467AE4275D0B130082F3C9 /* FriendsHeaderFooter.swift */; };
 		85467AE7275D0B130082F3C9 /* FriendsHeaderFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85467AE5275D0B130082F3C9 /* FriendsHeaderFooter.xib */; };
+		85467AE9275D41B40082F3C9 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85467AE8275D41B40082F3C9 /* Feed.storyboard */; };
+		85467AEB275D41DC0082F3C9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85467AEA275D41DC0082F3C9 /* FeedViewController.swift */; };
+		85467AEE275D421D0082F3C9 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85467AEC275D421D0082F3C9 /* FeedTableViewCell.swift */; };
+		85467AEF275D421D0082F3C9 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85467AED275D421D0082F3C9 /* FeedTableViewCell.xib */; };
 		85A8902A273682A70084447A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A89029273682A70084447A /* Profile.storyboard */; };
 		85A8902C2736875F0084447A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A8902B2736875F0084447A /* Settings.storyboard */; };
 		85A890302736AE560084447A /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A8902F2736AE560084447A /* DataBase.swift */; };
@@ -41,11 +45,15 @@
 		8521742527345BB700246DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8521742727345BB900246DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8521742A27345BB900246DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8521742C27345BB900246DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = iSocial/SupportingFiles/Info.plist; sourceTree = SOURCE_ROOT; };
+		8521742C27345BB900246DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SupportingFiles/Info.plist; sourceTree = SOURCE_ROOT; };
 		852B036A274D81840094D8D8 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		85467AE2275CF62F0082F3C9 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		85467AE4275D0B130082F3C9 /* FriendsHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsHeaderFooter.swift; sourceTree = "<group>"; };
 		85467AE5275D0B130082F3C9 /* FriendsHeaderFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsHeaderFooter.xib; sourceTree = "<group>"; };
+		85467AE8275D41B40082F3C9 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Feed.storyboard; path = Feed/View/Feed.storyboard; sourceTree = SOURCE_ROOT; };
+		85467AEA275D41DC0082F3C9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Feed/Controller/FeedViewController.swift; sourceTree = SOURCE_ROOT; };
+		85467AEC275D421D0082F3C9 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedTableViewCell.swift; path = Feed/View/FeedTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		85467AED275D421D0082F3C9 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FeedTableViewCell.xib; path = Feed/View/FeedTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		85A89029273682A70084447A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		85A8902B2736875F0084447A /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		85A8902F2736AE560084447A /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
@@ -100,7 +108,7 @@
 				85EBF48D275CDB8A00A1B04C /* Settings */,
 				85EBF488275CD93F00A1B04C /* SupportingFiles */,
 			);
-			path = iSocial;
+			name = iSocial;
 			sourceTree = "<group>";
 		};
 		85EBF484275CD90F00A1B04C /* Application */ = {
@@ -232,6 +240,7 @@
 		85EBF492275CDBBC00A1B04C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				85BDDB6A2737D96500BF2760 /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -240,7 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				85BDDB682737D95100BF2760 /* SignUp.storyboard */,
-				85BDDB6A2737D96500BF2760 /* SignUpViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +273,7 @@
 		85EBF496275CDBFC00A1B04C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				85467AEA275D41DC0082F3C9 /* FeedViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,6 +281,9 @@
 		85EBF497275CDC0400A1B04C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				85467AE8275D41B40082F3C9 /* Feed.storyboard */,
+				85467AEC275D421D0082F3C9 /* FeedTableViewCell.swift */,
+				85467AED275D421D0082F3C9 /* FeedTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -379,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85467AE9275D41B40082F3C9 /* Feed.storyboard in Resources */,
 				8521742B27345BB900246DB5 /* LaunchScreen.storyboard in Resources */,
 				85EBF4A0275CE40A00A1B04C /* Friends.storyboard in Resources */,
 				8521742827345BB900246DB5 /* Assets.xcassets in Resources */,
@@ -386,6 +399,7 @@
 				85A8902A273682A70084447A /* Profile.storyboard in Resources */,
 				85467AE7275D0B130082F3C9 /* FriendsHeaderFooter.xib in Resources */,
 				8521742627345BB700246DB5 /* Main.storyboard in Resources */,
+				85467AEF275D421D0082F3C9 /* FeedTableViewCell.xib in Resources */,
 				85A8902C2736875F0084447A /* Settings.storyboard in Resources */,
 				85EBF4A6275CE4D100A1B04C /* FriendsTableViewCell.xib in Resources */,
 			);
@@ -401,9 +415,11 @@
 				85A8903627370C140084447A /* ProfileViewController.swift in Sources */,
 				85467AE3275CF62F0082F3C9 /* Friend.swift in Sources */,
 				85BDDB6B2737D96500BF2760 /* SignUpViewController.swift in Sources */,
+				85467AEE275D421D0082F3C9 /* FeedTableViewCell.swift in Sources */,
 				85BDDB6F2739BB9F00BF2760 /* DrawView.swift in Sources */,
 				85EBF4A5275CE4D100A1B04C /* FriendsTableViewCell.swift in Sources */,
 				8521742327345BB700246DB5 /* LoginViewController.swift in Sources */,
+				85467AEB275D41DC0082F3C9 /* FeedViewController.swift in Sources */,
 				8521741F27345BB700246DB5 /* AppDelegate.swift in Sources */,
 				85A890302736AE560084447A /* DataBase.swift in Sources */,
 				85EBF4A2275CE43600A1B04C /* FriendsViewController.swift in Sources */,
@@ -563,7 +579,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FJFDQTTX27;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iSocial/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = /Users/khayur/iSocial/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -592,7 +608,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FJFDQTTX27;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iSocial/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = /Users/khayur/iSocial/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
