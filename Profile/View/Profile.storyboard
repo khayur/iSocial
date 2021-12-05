@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Profile" id="Y6W-OH-hqX" customClass="ProfileViewController" customModule="iSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2Y-sZ-Sqi">
+                                <rect key="frame" x="330.33333333333331" y="822" width="77.666666666666686" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78p-Rg-llo">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="50"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="v8i-n1-DBt"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sign out">
+                                            <color key="baseForegroundColor" systemColor="tintColor"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressSignOutButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kYe-EE-Hgg"/>
+                                            <action selector="signOutButton" destination="nXT-BN-KTC" eventType="touchUpInside" id="lSo-jd-knc"/>
+                                            <action selector="signOutButton:forEvent:" destination="nXT-BN-KTC" eventType="touchUpInside" id="gec-7L-O2Q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anc-XO-BI5" customClass="DrawView" customModule="iSocial" customModuleProvider="target">
+                                <rect key="frame" x="20" y="602" width="388" height="200"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="jQ2-Cs-rTE"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GaG-YJ-z9X">
+                                <rect key="frame" x="20" y="551.33333333333337" width="388" height="30.666666666666629"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="3oc-bt-msr">
+                                        <rect key="frame" x="121.00000000000001" y="0.0" width="146.33333333333337" height="30.666666666666668"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNV-Pz-ijb" userLabel="Share">
+                                                <rect key="frame" x="0.0" y="0.0" width="50.666666666666664" height="30.666666666666668"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system">
+                                                    <color key="baseForegroundColor" systemColor="tintColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="didPressShareButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pzC-vD-XkH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tx3-ew-lUr" userLabel="Settings">
+                                                <rect key="frame" x="95.666666666666657" y="0.0" width="50.666666666666657" height="30.666666666666668"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="gearshape.2" catalog="system">
+                                                    <color key="baseForegroundColor" systemColor="tintColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="didPressSettingsButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QTI-TK-IgQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ior-x0-9g3" customClass="ProfileImageView" customModule="iSocial" customModuleProvider="target">
+                                <rect key="frame" x="20" y="94" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Co5-Nd-rVk"/>
+                                    <constraint firstAttribute="height" constant="100" id="rvl-zj-E04"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZlJ-hO-aq7">
+                                <rect key="frame" x="140" y="101" width="120.33333333333331" height="86.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FirstName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YO-Wd-BZu">
+                                        <rect key="frame" x="0.0" y="0.0" width="120.33333333333333" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LastName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvP-oF-Hii">
+                                        <rect key="frame" x="0.0" y="30" width="118.33333333333333" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sU-H8-cPK">
+                                        <rect key="frame" x="0.0" y="60.000000000000007" width="37.333333333333336" height="26.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JHJ-nd-8Qt">
+                                <rect key="frame" x="20" y="227.33333333333334" width="388" height="29.666666666666657"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uff-H0-kTl">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="29.666666666666668"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Friends">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                            <color key="baseForegroundColor" systemColor="tintColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didPressFriendsButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="c9k-eo-0nJ"/>
+                                            <segue destination="oF0-eD-I1G" kind="show" identifier="FriensSegue" id="z5S-1O-eIE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4T-lJ-8yn">
+                                        <rect key="frame" x="209" y="0.0" width="179" height="29.666666666666668"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Feed">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                            <color key="baseForegroundColor" systemColor="tintColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didPressFeedButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XSu-YZ-an6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZlJ-hO-aq7" firstAttribute="leading" secondItem="ior-x0-9g3" secondAttribute="trailing" constant="20" id="1D7-TO-0ng"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Q2Y-sZ-Sqi" secondAttribute="bottom" constant="20" id="BTJ-D6-hzC"/>
+                            <constraint firstItem="JHJ-nd-8Qt" firstAttribute="top" secondItem="ZlJ-hO-aq7" secondAttribute="bottom" constant="40" id="KJ3-v4-JsU"/>
+                            <constraint firstItem="anc-XO-BI5" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-20" id="KNb-PW-HVQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JHJ-nd-8Qt" secondAttribute="trailing" constant="20" id="LPA-tq-b6v"/>
+                            <constraint firstItem="Q2Y-sZ-Sqi" firstAttribute="top" secondItem="anc-XO-BI5" secondAttribute="bottom" constant="20" id="Trw-Yg-Huj"/>
+                            <constraint firstItem="anc-XO-BI5" firstAttribute="top" secondItem="GaG-YJ-z9X" secondAttribute="bottom" constant="20" id="WEu-jh-woE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GaG-YJ-z9X" secondAttribute="trailing" constant="20" id="aiK-rA-KXY"/>
+                            <constraint firstItem="ior-x0-9g3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="ccn-7r-UVu"/>
+                            <constraint firstItem="ZlJ-hO-aq7" firstAttribute="centerY" secondItem="ior-x0-9g3" secondAttribute="centerY" id="e16-SQ-ZPO"/>
+                            <constraint firstItem="anc-XO-BI5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="eRS-gL-rFy"/>
+                            <constraint firstItem="GaG-YJ-z9X" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="h2c-LR-0JZ"/>
+                            <constraint firstItem="anc-XO-BI5" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="oKb-Qm-SPJ"/>
+                            <constraint firstItem="ior-x0-9g3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="tMB-zR-WU3"/>
+                            <constraint firstItem="JHJ-nd-8Qt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="tpD-E4-0l4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Q2Y-sZ-Sqi" secondAttribute="trailing" constant="20" id="zSK-Je-PV8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="kCq-Ol-22X">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Share" image="square.and.arrow.up" catalog="system" id="mif-TS-rAB"/>
+                            <barButtonItem title="Settings" image="ellipsis" catalog="system" id="nnc-dx-KQb">
+                                <connections>
+                                    <segue destination="hqU-M2-MIk" kind="show" identifier="SettingsSegue" id="Kvz-wM-e69"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ageLabel" destination="3sU-H8-cPK" id="feR-iO-nuq"/>
+                        <outlet property="avatarView" destination="ior-x0-9g3" id="zJJ-pU-Ztb"/>
+                        <outlet property="feedButton" destination="F4T-lJ-8yn" id="mjp-v4-tRK"/>
+                        <outlet property="friendsButton" destination="uff-H0-kTl" id="TPY-lN-OLS"/>
+                        <outlet property="lastNameLabel" destination="tvP-oF-Hii" id="Jv9-bX-wto"/>
+                        <outlet property="nameLabel" destination="0YO-Wd-BZu" id="oQK-6u-IZW"/>
+                        <outlet property="settingsButton" destination="tx3-ew-lUr" id="c18-k8-fD2"/>
+                        <outlet property="shareButton" destination="UNV-Pz-ijb" id="i36-0x-nHW"/>
+                        <outlet property="signOutButton" destination="78p-Rg-llo" id="81l-Od-AnB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="nXT-BN-KTC" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="933.64485981308405" y="77.753779697624196"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="lg1-mY-gdJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Friends" id="oF0-eD-I1G" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mEV-Qr-SbR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IET-TF-wSn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534" y="93"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="nwS-Vi-VE6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="hqU-M2-MIk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="G8f-eb-nb3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ss-00-ZnG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537" y="61"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="gearshape.2" catalog="system" width="128" height="100"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
