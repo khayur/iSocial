@@ -20,8 +20,5 @@ class FriendsTableViewCell: UITableViewCell {
         self.profileSmallImageView.layer.cornerRadius = self.profileSmallImageView.frame.height / 2
         firstNameLabel.textColor = .white
         lastNameLabel.textColor = .white
-        
     }
-    
-    
 }

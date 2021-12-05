@@ -221,27 +221,25 @@ extension UIView {
 }
 
 extension UIView {
-    func applyGradient(colours: [UIColor], cornerRadius: CGFloat) -> CAGradientLayer {
+    func applyGradient(colours: [UIColor], cornerRadius: CGFloat) {
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = self.bounds
         gradient.colors = colours.map { $0.cgColor }
         gradient.locations = nil
         gradient.cornerRadius = cornerRadius
         self.layer.insertSublayer(gradient, at: 0)
-        return gradient
     }
     
-    func applyGradient(colours: [UIColor]) -> CAGradientLayer {
-        return self.applyGradient(colours: colours, locations: nil)
+    func applyGradient(colours: [UIColor]) {
+        self.applyGradient(colours: colours, locations: nil)
     }
     
-    func applyGradient(colours: [UIColor], locations: [NSNumber]?) -> CAGradientLayer {
+    func applyGradient(colours: [UIColor], locations: [NSNumber]?) {
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = self.bounds
         gradient.colors = colours.map { $0.cgColor }
         gradient.locations = locations
         self.layer.insertSublayer(gradient, at: 0)
-        return gradient
     }
 }
 

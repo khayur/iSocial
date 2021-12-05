@@ -8,16 +8,18 @@
 import UIKit
 
 class FeedTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    //MARK: Outlets
+    @IBOutlet weak var feedName: UILabel!
+    @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var viewsButton: UIButton!
+    @IBOutlet weak var feedImageView: UIImageView!
     
+    //MARK: Methods
+    override func layoutSubviews() {
+        self.backgroundColor = .clear
+        feedName.textColor = .white
+        feedImageView.translatesAutoresizingMaskIntoConstraints = false
+    }
 }
