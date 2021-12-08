@@ -28,6 +28,7 @@ class FeedViewController: UIViewController {
         tableView.register(cellNib, forCellReuseIdentifier: "feedCell")
     }
     
+
     private func fillFeeds() {
         feeds.append(Feed(feedTitle: "Dollar falls", feedText: nil, likes: nil, comments: nil, views: nil, feedImage: nil))
         feeds.append(Feed(feedTitle: "Today's weather", feedText: nil, likes: nil, comments: nil, views: nil, feedImage: nil))
